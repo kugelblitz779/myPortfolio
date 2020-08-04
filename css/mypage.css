@@ -1,0 +1,473 @@
+nav div{
+	display: flex;
+  	flex-direction: row;
+  	align-items: right;
+}
+body{
+	background-color: #343A40 !important;
+	font-family: 'Raleway', sans-serif !important;
+}
+nav{
+	background-color: #181818;
+}
+#header{
+	color: white;
+}
+#pageHeader{
+	padding-top: 120px;
+	padding-left: 42px;
+	height:600px;
+	width:700px;
+	float:left;
+
+}
+#skillHeader{
+	margin-top: 11px;
+}
+#buttonHeader{
+	margin-top: 60px;
+}
+.btn{
+  border: 2px solid #ED5565;
+  background: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.btn1{
+  color: #ED5565;
+}
+
+.btn1:hover{
+  color: #fff;
+  box-shadow: 0 0 10px #ED5565;
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #ED5565;
+  z-index: -1;
+  transition: 0.8s;
+}
+.btn1::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn1:hover::before{
+  height: 180%;
+}
+.jiggle{
+	cursor: pointer;
+}
+
+#picHeader{
+	height: 600px;
+	width:700px;
+	float: left;
+	/*border: 1px solid blue;*/
+	margin-left: 40px;
+	margin-right: auto;
+}
+#picHeader img{
+	height: 900px;
+	width:800px;
+
+}
+.hidden{
+	display: none;
+}
+#aboutDiv{
+	margin-top: 50px;
+	height: 940px;
+	/*border: 1px solid blue;*/
+	float: left;
+	position: relative;
+}
+#aboutWord{
+	margin-left: 42px;
+	margin-top: 25px;
+	/*border: 1px solid blue;*/
+	height: 140px;
+	width: 35%;
+	float: left;
+	position: absolute;
+}
+#aboutWritten{
+	height: 530px;
+	width: 58%;
+	/*border: 1px solid blue;*/
+	float: left;
+	position: absolute;
+	top: 150px;
+	left: 300px;
+	z-index: 10;
+	padding: 15px;
+	background-color: #343A40;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#aboutIMG{
+	height: 400px;
+	width: 30%;
+	/*border: 1px solid blue;*/
+	position: absolute;
+	top: 460px;
+	left: 1050px;
+
+}
+#firstIMG{
+	height: 400px;
+
+}
+#skillDiv{
+	margin-top: 70px;
+
+	float: left;
+	height: 900px;
+	width: 100%;
+	/*border: 1px solid blue;*/
+	position: relative;
+}
+#skillWord{
+	/*border: 1px solid blue;*/
+	height: 140px;
+	width: 20%;
+	float: left;
+	position: absolute;
+	left: 1120px;
+	margin-top: 60px;
+}
+#skillWritten{
+
+	float: left;
+	/*border: 1px solid blue;*/
+	position: absolute;
+	top: 160px;
+	left: 300px;
+	width: 58%;
+	height: 200px;
+	padding: 15px;
+	background-color: #343A40;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	z-index: 10;
+	margin-top: 20px;
+}
+#progressSkills{
+	position: absolute;
+	top: 480px;
+	left: 300px;
+	width: 55%;
+	
+}
+.tag{
+	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+	width: 145px;
+	height: 28px;
+	background-color: #1785A7;
+	margin-right: 30px;
+	/*float: left;*/
+	margin-top: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+.tag p{
+	color: #fff;
+	text-align: left;
+	padding-left: 10px;
+	font-size: 1.1rem;
+	padding-top: 2px;
+	
+}
+.bar{
+	background-color: #343A40;
+	display: block;
+
+	height: 22px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #1785A7;
+	margin-top: 20px;
+
+}
+.bar span{
+	height: 20px;
+	float: left;
+	background-color: #1785A7;
+	border-radius: 10px;
+
+	/*margin-top: 20px;*/
+}
+.html{
+
+	animation-name: html;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+.css{
+
+	animation-name: css;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+.java{
+
+	animation-name: java;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+.jquery{
+
+	animation-name: jquery;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+}
+.phP{
+	animation-name: php;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+
+}
+@keyframes html{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:90%;
+	}
+}
+@keyframes css{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:80%;
+	}
+}
+@keyframes java{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:60%;
+	}
+}
+@keyframes jquery{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:60%;
+	}
+}
+@keyframes php{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:70%;
+	}
+}
+
+
+
+.htm5{
+	display: block;
+	margin-top: 20px;
+	width: 100%;
+	
+}
+#workDiv{
+	margin-top: 70px;
+	height: 940px;
+	/*border: 1px solid blue;*/
+	float: left;
+	position: relative;
+}
+#workWord{
+	margin-left: 42px;
+	margin-top: 25px;
+	/*border: 1px solid blue;*/
+	height: 140px;
+	width: 35%;
+	float: left;
+	position: absolute;
+}
+#workWritten{
+	height: 530px;
+	width: 90%;
+	
+	float: left;
+	position: absolute;
+	top: 230px;
+	left: 60px;
+	/*border: 1px solid blue;*/
+	padding: 15px;
+	
+	
+}
+.middle{
+	background: #343A40;
+
+}
+
+.card{
+  cursor: pointer;
+  width: 340px;
+  height: 180px;
+  border:none;
+}
+.front,.back{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+  
+}
+.front img{
+  width: 100%;
+  height: 100%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #1785A7;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+	background: #1785A7;
+  color: white;
+  font-size: 14px;
+  
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+	/*background: white;*/
+  transform: perspective(600px) rotateY(0deg);
+}
+#workIMG{
+	height: 450px;
+	width: 91%;
+	/*border: 1px solid blue;*/
+	position: absolute;
+	top: 350px;
+	left: 60px;
+
+}
+#firstdiv{
+	margin-top: 0 !important;
+}
+.workimg{
+	margin-top: 60px;
+	/*border: 1px solid blue;*/
+}
+.workbtn{
+	background-color:#343A40; 
+	color:#ED5565; 
+	border: 2px solid #ED5565;
+	border-radius: 5px;
+
+
+
+}
+.workbtn:hover{
+	background-color: #ED5565;
+	color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #ED5565;
+}
+#contactDiv{
+	margin-top: 50px;
+	height: 940px;
+	/*border: 1px solid blue;*/
+	float: left;
+	position: relative;
+}
+#contactWord{
+	height: 140px;
+	width: 20%;
+	float: left;
+	position: absolute;
+	left: 960px;
+	margin-top: 60px;
+}
+#contactWritten{
+	height: 530px;
+	width: 30%;
+	
+	float: left;
+	position: absolute;
+	top: 280px;
+	left: 510px;
+	/*border: 1px solid blue;*/
+	padding: 15px;
+}
+form input, form textarea{
+	display: block;
+	width: 100%;
+	padding: 20px;
+	background-color: #343A40;
+	border: 3px solid #707070;
+	border-radius: 5px;
+	margin: 20px 0;
+	outline: none;
+	font-size: 1.2rem;
+	color: #fff;
+	
+	
+}
+#sub{
+	width: 150px;
+	height: 60px;
+	background-color: #ED5565;
+	/*border: 2px solid #ED5565;*/
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#sub:hover{
+	/*border-radius: 25px;*/
+	background-color: #ED5565;
+	color: white;
+	box-shadow: 0 0 10px #ED5565;
+
+}
+
+#contactsub{
+	width: 100%;
+	align-items: center;
+
+}
+
+#mybar{
+	float: left;
+	height: 50px;
+	width: 100%;
+	border-top: 1px solid #586261;
+	padding-top: 10px;
+}
+.linkage:hover{
+	border-bottom: 1px solid wheat;
+	transition: 0.3s;
+}

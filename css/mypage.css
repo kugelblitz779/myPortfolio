@@ -1,8 +1,3 @@
-nav div{
-	display: flex;
-  	flex-direction: row;
-  	align-items: right;
-}
 body{
 	background-color: #343A40 !important;
 	font-family: 'Raleway', sans-serif !important;
@@ -10,28 +5,32 @@ body{
 nav{
 	background-color: #181818;
 }
+
+/*-- MAIN --------------------------------------------------------------------------------------------------*/
+
 #header{
 	color: white;
 }
-#pageHeader{
-	padding-top: 120px;
-	padding-left: 42px;
-	height:600px;
-	width:700px;
-	float:left;
+#main{
+	height: auto;
+	float: left;
+	/*border: 1px solid blue;*/
 
 }
-#skillHeader{
-	margin-top: 11px;
-}
-#buttonHeader{
-	margin-top: 60px;
+#pageHeader{
+	/*padding-top: 120px;
+	padding-left: 42px;*/
+	height:auto;
+	width: 55%;
+	float:left;
+	/*border: 1px solid blue;*/
+
 }
 .btn{
   border: 2px solid #ED5565;
   background: none;
   padding: 10px 20px;
-  font-size: 16px;
+  /*font-size: 16px;*/
   font-family: "montserrat";
   cursor: pointer;
   margin: 5px;
@@ -41,6 +40,7 @@ nav{
 }
 .btn1{
   color: #ED5565;
+  font-size: 8px;
 }
 
 .btn1:hover{
@@ -70,102 +70,156 @@ nav{
 	cursor: pointer;
 }
 
+
+#header{
+	font-size: 19px;
+}
+
+#skill{
+	color: #888688;
+	font-size: 9px;
+	font-family: 'Raleway', sans-serif;
+}
+
 #picHeader{
-	height: 600px;
-	width:700px;
+	
+	height: 100%;
+	
 	float: left;
 	/*border: 1px solid blue;*/
-	margin-left: 40px;
-	margin-right: auto;
+	width: 45%;
+	/*margin-left: 40px;*/
+}
+#skillHeader{
+	word-wrap: break-word;
 }
 #picHeader img{
-	height: 900px;
-	width:800px;
+	object-fit: cover;
+	height: auto;
+	width:100%;
+	padding-top: 40px;
+	/*border: 1px solid blue;*/
 
 }
 .hidden{
 	display: none;
 }
+
+/*-- ABOUT --------------------------------------------------------------------------------------------------*/
+
 #aboutDiv{
-	margin-top: 50px;
-	height: 940px;
+	/*margin-top: 20px;*/
+	height: auto;
+	width: 100%;
 	/*border: 1px solid blue;*/
 	float: left;
-	position: relative;
+	/*position: relative;*/
 }
 #aboutWord{
-	margin-left: 42px;
-	margin-top: 25px;
+	/*margin-left: 42px;
+	margin-top: 25px;*/
 	/*border: 1px solid blue;*/
-	height: 140px;
-	width: 35%;
+	height: auto;
+	width: 40%;
 	float: left;
-	position: absolute;
+	/*position: absolute;*/
 }
 #aboutWritten{
-	height: 530px;
-	width: 58%;
+	height: auto;
+	width: 70%;
 	/*border: 1px solid blue;*/
 	float: left;
-	position: absolute;
-	top: 150px;
-	left: 300px;
+/*	position: absolute;*/
+	/*top: 150px;
+	left: 300px;*/
 	z-index: 10;
 	padding: 15px;
 	background-color: #343A40;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #aboutIMG{
-	height: 400px;
+	height: auto;
 	width: 30%;
+	float: left;
 	/*border: 1px solid blue;*/
-	position: absolute;
-	top: 460px;
-	left: 1050px;
+	/*position: absolute;*/
+	/*top: 460px;
+	left: 1050px;*/
 
 }
 #firstIMG{
-	height: 400px;
+	display: none;
+	object-fit: cover;
+	height: auto;
+	width: 100%;
 
 }
+#aboutME{
+	font-size: 11px;
+	color: #959595;
+	font-family: 'Raleway', sans-serif;
+}
+#aboutTheWord{
+	font-family: 'Raleway', sans-serif;
+	color: #586261; 
+	margin-left: 44px;
+	font-size: 60px;
+}
+
+
+
+
+
+/*-- SKILLS --------------------------------------------------------------------------------------------------*/
+
+#skilling{
+	font-size: 60px;
+	color: #586261;
+}
+
+
 #skillDiv{
 	margin-top: 70px;
 
 	float: left;
-	height: 900px;
+	height: 680px;
 	width: 100%;
 	/*border: 1px solid blue;*/
 	position: relative;
 }
 #skillWord{
 	/*border: 1px solid blue;*/
-	height: 140px;
-	width: 20%;
+	height: auto;
+	width: 30%;
 	float: left;
-	position: absolute;
-	left: 1120px;
-	margin-top: 60px;
+	margin-left: 90px;
+	
 }
 #skillWritten{
 
 	float: left;
 	/*border: 1px solid blue;*/
-	position: absolute;
-	top: 160px;
-	left: 300px;
-	width: 58%;
-	height: 200px;
+	
+	width: 65%;
+	height: auto;
 	padding: 15px;
 	background-color: #343A40;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	z-index: 10;
-	margin-top: 20px;
+	margin-left: 65px;
 }
+
+#skillswrite{
+	font-size: 11px; 
+	color: #83878D;
+}
+
+
+
 #progressSkills{
-	position: absolute;
-	top: 480px;
-	left: 300px;
-	width: 55%;
+	margin-left: 50px;
+	width: 74%;
+	margin-top: 30px;
 	
 }
 .tag{
@@ -184,8 +238,8 @@ nav{
 	color: #fff;
 	text-align: left;
 	padding-left: 10px;
-	font-size: 1.1rem;
-	padding-top: 2px;
+	font-size: 0.8rem;
+	padding-top: 5px;
 	
 }
 .bar{
@@ -238,6 +292,12 @@ nav{
 	animation-fill-mode: forwards;
 
 }
+.django{
+	animation-name: django;
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+
+}
 @keyframes html{
 	0%{
 		width:0%;
@@ -278,6 +338,14 @@ nav{
 		width:70%;
 	}
 }
+@keyframes django{
+	0%{
+		width:0%;
+	}
+	100%{
+		width:70%;
+	}
+}
 
 
 
@@ -287,16 +355,20 @@ nav{
 	width: 100%;
 	
 }
+
+
+/*-- WORK --------------------------------------------------------------------------------------------------*/
+
 #workDiv{
-	margin-top: 70px;
-	height: 940px;
+	margin-top: 10px;
+	height: 600px;
 	/*border: 1px solid blue;*/
 	float: left;
 	position: relative;
 }
 #workWord{
-	margin-left: 42px;
-	margin-top: 25px;
+	margin-left: 33px;
+	
 	/*border: 1px solid blue;*/
 	height: 140px;
 	width: 35%;
@@ -304,17 +376,28 @@ nav{
 	position: absolute;
 }
 #workWritten{
-	height: 530px;
-	width: 90%;
+	height: auto;
+	/*width: 70%*/;
 	
 	float: left;
 	position: absolute;
-	top: 230px;
-	left: 60px;
+	top: 110px;
+	left: 0;
 	/*border: 1px solid blue;*/
 	padding: 15px;
 	
 	
+}
+#workparent{
+	width: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#workwrite{
+	font-family: 'Raleway', sans-serif; 
+	color: #586261; 
+	font-size: 60px;
+	margin-left: 65px;
 }
 .middle{
 	background: #343A40;
@@ -329,7 +412,7 @@ nav{
 }
 .front,.back{
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
   backface-visibility: hidden;
   position: absolute;
@@ -338,7 +421,8 @@ nav{
 }
 .front img{
   width: 100%;
-  height: 100%;
+  height: auto;
+  
 }
 .front{
   transform: perspective(600px) rotateY(0deg);
@@ -350,8 +434,8 @@ nav{
 .back-content{
 	background: #1785A7;
   color: white;
-  font-size: 14px;
-  
+  font-size: 10px;
+  height: 100%;
   text-align: center;
   padding: 15px;
   width: 100%;
@@ -366,11 +450,11 @@ nav{
 }
 #workIMG{
 	height: 450px;
-	width: 91%;
+	width: 100%;
 	/*border: 1px solid blue;*/
 	position: absolute;
-	top: 350px;
-	left: 60px;
+	top: 220px;
+	left: 0;
 
 }
 #firstdiv{
@@ -385,6 +469,7 @@ nav{
 	color:#ED5565; 
 	border: 2px solid #ED5565;
 	border-radius: 5px;
+	font-size: 8px;
 
 
 
@@ -395,29 +480,39 @@ nav{
 	border-radius: 10px;
 	box-shadow: 0 0 10px #ED5565;
 }
+
+
+/*-- CONTACT --------------------------------------------------------------------------------------------------*/
+
+
 #contactDiv{
-	margin-top: 50px;
-	height: 940px;
+	height: 700px;
 	/*border: 1px solid blue;*/
 	float: left;
 	position: relative;
 }
 #contactWord{
-	height: 140px;
+	height: auto;
 	width: 20%;
 	float: left;
 	position: absolute;
-	left: 960px;
+	left: 75px;
 	margin-top: 60px;
 }
+#contacting{
+	font-family: 'Raleway', sans-serif; 
+	color: #586261; 
+	font-size: 60px;
+}
 #contactWritten{
-	height: 530px;
-	width: 30%;
+	height: auto;
+	width: 70%;
 	
 	float: left;
 	position: absolute;
-	top: 280px;
-	left: 510px;
+	top: 150px;
+	left: 40px;
+	margin-left: 15px;
 	/*border: 1px solid blue;*/
 	padding: 15px;
 }
@@ -430,20 +525,21 @@ form input, form textarea{
 	border-radius: 5px;
 	margin: 20px 0;
 	outline: none;
-	font-size: 1.2rem;
+	font-size: 0.8rem;
 	color: #fff;
 	
 	
 }
 #sub{
-	width: 150px;
-	height: 60px;
+	width: 65px;
+	height: 36px;
 	background-color: #ED5565;
 	/*border: 2px solid #ED5565;*/
 	color: white;
 	cursor: pointer;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-size: 9px;
 
 }
 #sub:hover{
@@ -471,3 +567,69 @@ form input, form textarea{
 	border-bottom: 1px solid wheat;
 	transition: 0.3s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- MEDIA QUERY MEDIA QUERY MEDIA QUERY-------------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 1100px) {
+  #picHeader img{object-fit: cover;height: auto;width:65%;padding-top: 40px;}
+  #aboutME {font-size: 25px;}
+  #aboutTheWord {font-size: 130px;}
+  #firstIMG {display: block;}
+  #header { font-size: 55px; }
+  #aboutWord{margin-left: 44px;margin-top: 25px;position: absolute;}
+  #aboutDiv{position: relative; height: 940px; float: left}
+  #aboutWritten{position: absolute;top: 180px;left: 175px;}
+  #aboutIMG{height: auto;width: 25%;float: left;position: absolute;top: 460px;left: 1030px;}
+  .btn1{font-size: 16px;}
+  #skill{font-size: 13px;}
+  #pageHeader{padding-left: 45px;}
+  #skillDiv{height: 900px;}
+  #skilling{font-size: 130px;}
+  #skillWord{position: absolute;left: 1010px;margin-left: 50px;margin-top: 60px;}
+  #skillWritten{ position: absolute;top: 189px;left: 230px; height: 200px;margin-left: 0px;}
+  #skillswrite{font-size: 25px; }
+  #progressSkills{position: absolute;top: 470px;left: 280px;margin-left: 1px;width: 58%;margin-top: 0px;}
+  .tag p{font-size: 1.1rem;padding-top: 2px;}
+  #workwrite{ font-size: 130px; margin-left: 0px;}
+  #workDiv{margin-top: 70px;height: 900px;}
+  #workWord{margin-top: 25px; margin-left: 42px;}
+  #workWritten{width: 90%;float: left;position: absolute;top: 230px;left: 60px; height: 530px;}
+  #workIMG{height: 450px;width: 91%;position: absolute;top: 350px;left: 60px;}
+  .back-content{font-size: 14px;}
+  .front,.back{height: 100%}
+  #contactDiv{margin-top: 50px;height: 940px;float: left;position: relative;}
+  #contactWord{height: 140px;width: 20%;float: left;position: absolute;left: 960px;margin-top: 60px; }
+  #contacting{font-size: 130px;}
+  form input, form textarea{font-size: 1.2rem;}
+  #contactWritten{height: 530px;width: 30%;float: left;position: absolute;top: 280px;left: 510px;padding: 15px;}
+  .workbtn{font-size: 16px;}
+  #sub{font-size: 17px;width: 100px;height: 48px;}
+}
+
+/*-- MEDIA QUERY MEDIA QUERY MEDIA QUERY-------------------------------------------------------------------------*/

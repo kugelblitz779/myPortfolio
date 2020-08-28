@@ -1,9 +1,15 @@
 $(document).ready(function () {
     $('#header').fadeIn(1500).removeClass('hidden');
     $('#skill').fadeIn(2000).removeClass('hidden');
-    $('#btnfirst').fadeIn(2000).removeClass('hidden');
+    $('#buttonHeader button').fadeIn(2500).removeClass('hidden');
+    $("#buttonHeader button").click(function () {
+        var x = $("#contactDiv").position(); //gets the position of the div element...
+        window.scrollTo(x.left, x.top); //window.scrollTo() scrolls the page upto certain position....
+        //it takes 2 parameters : (x axis cordinate, y axis cordinate);
+    });
   
 });
+
 
 window.onscroll = function() {myFunction()};
 var flag=false;
@@ -32,9 +38,5 @@ function myFunction() {
     $("#php").removeClass("phP");
     $("#djang").removeClass("django");
   }
-  
-  
-
-
 
 }
